@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="105dp"
+        android:layout_height="290dp"
+        android:contentDescription="@string/spinnerframe1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/spinnerframe1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scrollbars="none" />
+
+<!--         Transparent overlay to intercept touch events-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/spinnerframe1" />
+
+    </FrameLayout>
+
+    <!-- Repeat the same structure for other spinners -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="105dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:contentDescription="@string/spinner_frame_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout3"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/spinner_frame_2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scrollbars="none" />
+
+<!--         Transparent overlay to intercept touch events -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/spinner_frame_2" />
+
+    </FrameLayout>
+
+    <!-- Repeat the same structure for the third spinner -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="105dp"
+        android:layout_height="290dp"
+        android:contentDescription="@string/spinner_frame_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spinner3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/spinner_frame_3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/spinner_frame_3" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

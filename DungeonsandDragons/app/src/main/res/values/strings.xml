@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name" translatable="false">Dungeons and Dragons: Gems</string>
+    <string name="win_splash" translatable="true">YOU WON!</string>
+    <string name="coins">coins</string>
+    <string name="start">Start</string>
+    <string name="setting">Setting</string>
+    <string name="quit">quit</string>
+    <string name="close_btn">close_btn</string>
+    <string name="music_on_btn">music_on_btn</string>
+    <string name="music_off_btn">music_off_btn</string>
+    <string name="sound_on_btn">sound_on_btn</string>
+    <string name="sound_off_btn">sound_off_btn</string>
+    <string name="start_btn">start_btn</string>
+    <string name="settings_btn">settings_btn</string>
+    <string name="quit_btn">quit_btn</string>
+    <string name="video_splash">video splash</string>
+    <string name="logo_menu">logo menu</string>
+    <string name="jackpot_combin">jackpot combination</string>
+    <string name="minusBtn">minus btn</string>
+    <string name="bet_img">bet image</string>
+    <string name="plusBtn">plus btn</string>
+    <string name="spinBtn">spin btn</string>
+    <string name="tribute">Tribute</string>
+    <string name="_250_565">100,000,000</string>
+    <string name="_0575">0575</string>
+    <string name="web_access_for_html">Web Access for HTML</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="spinnerframe1">Spinner Frame 1</string>
+    <string name="spinner_frame_2">Spinner Frame 2</string>
+    <string name="spinner_frame_3">Spinner Frame 3</string>
+    <string name="background_video">Background Video</string>
+    <string name="menus">Menus</string>
+    <string name="prize_text">Prize Text</string>
+    <string name="frame_for_tribute_and_combination">Frame for Tribute and Combination</string>
+    <string name="combination">combination</string>
+    <string name="current_coins">Current Coins</string>
+    <string name="_5">5</string>
+    <string name="frame_of_spinner">Frame of Spinner</string>
+    <string name="you_won_frame">You won Frame</string>
+    <string name="close">Close</string>
+    <string name="dungeons_and_dragons_gems_notification">Dungeons and Dragons: Gems Notification</string>
+    <string name="dungeons_and_dragons_gems_message">Dungeons and Dragons: Gems Message</string>
+    <string name="dungeons_and_dragons_gems_link">Dungeons and Dragons: Gems Link</string>
+    <string name="notif_title">Notif title</string>
+    <string name="notif_message">notif message</string>
+    <string name="notif_btn">notif btn</string>
+    <string name="setting_frame">setting frame</string>
+    <string name="dungeons_and_dragons_gems">Dungeons and Dragons: Gems</string>
+    <string name="btn_plus">Btn Plus</string>
+    <string name="btn_spin">Btn Spin</string>
+    <string name="btn_minus">Btn Minus</string>
+    <string name="treasure_bg">treasure bg</string>
+    <string name="sound_btn">Sound btn</string>
+    <string name="music_btn">music btn</string>
+    <string name="win_photo">win photo</string>
+    <string name="jackpot_bg">jackpot bg</string>
+    <string name="exp_level">Level: %1$d</string>
+    <string name="exp_points">Exp Points: %1$d</string>
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.dungeons.dragons.gems">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:remove="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+
+    <application
+        android:name=".NotificationConfig"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/my_icon"
+        android:label="@string/dungeons_and_dragons_gems"
+        android:roundIcon="@drawable/my_round_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DungeonsAndDragons"
+        tools:replace="android:fullBackupContent"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ReturnedPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".libs.WebAppConfig"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenu"
+            android:exported="false"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".GamePolicy"
+            android:exported="false"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MyNotification"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="dev.dungeons.dragons.gems.NOTIFICATION_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+
+</manifest>
